@@ -1,0 +1,382 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Manuel Ruiz - Web Developer</title>
+  <style>
+      header {
+          background: url('http://hdqwalls.com/wallpapers/mountains-moon-trees-minimalism-hd.jpg');
+          background-size: cover;
+          background-position: center;
+          min-height: 850px;
+      }
+      .section {
+          padding-top:4vw;
+          padding-bottom:4vw;
+      }
+      .section .lady img {
+          width:100%;
+          height:200px;
+      }
+      .stack {
+          margin-top:6.5%;
+      }
+      .tabs .indicator {
+          background-color: #1a237e;
+      }
+      .tabs .tab a:focus, .tabs .tab a:focus.active {
+          background:transparent;
+      }
+      .skillz {
+          margin-top:6em;
+          border-bottom:1pt solid #1a237e;
+          border-width: 2pt;
+      } 
+      @media screen and (max-width: 670px) {
+          header {
+              min-height:500px;
+          }
+          .lady {
+              text-align: center;
+          }
+        .section .lady img {
+            width:70%;
+            height:120px;
+            margin-top:10%;
+        }
+        .stack {
+            text-align: center;
+            margin-bottom:20%;
+        }
+      }
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#" class="brand-logo left">Manuel Ruiz<!-- - <span class="red-text lighten-1">Web</span><span class="white-text lighten-2">Dev</span><span class="white-text darken-3">elo</span><span class="green-text lighten-4">per</span>--></a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#photos">My Skills</a></li>
+                    <li><a href="#services">My Experience</a></li>
+                    <li><a href="#contact">My Projects</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-tooltip="My Instagram">
+                            <i class="fab fa-instagram"></i>                         
+                    </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small transparent" data-tooltip="My GitHub repositories">
+                            <i class="fab fa-github"></i>                         
+                    </a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#photos">My Skills</a></li>
+                    <li><a href="#services">My Experience</a></li>
+                    <li><a href="#contact">My Projects</a></li>
+                    <li><a href="#about">About me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+  <!-- photo / grid -->
+  <section class="container section scrollspy" id="photos">
+      <div class="row">
+          <div class="col s12 l4">
+              <img src="https://blog.hartman-technology.com/wp-content/uploads/2018/01/testing-UI.png" class="responsive-img materialboxed">
+          </div>
+          <div class="col s12 l6 offset-l1">
+              <h2 class="indigo-text text-darken-4">Front-End</h2>
+              <p>I love to develop web apps with JavaScript. Connect web applications with API's and create great UX/UI. From develop a small website to create a web app or a native mobile app with React Native, JavaScript, and the front-end are always fun to work.</p>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4 push-l7 offset-l1">
+            <img src="http://www.ariane.com/images/2016/08/08/New-intro-backend.png" alt="" class="responsive-img">
+        </div>
+        <div class="col s12 l6 pull-l5 right-align offset-l1">
+            <h2 class="indigo-text text-darken-4">Back-End</h2>
+            <p>Logic and data are really tough and not for everybody, but I feel pretty capable to work with the most used back-end languages. In the back-end things can get really rough, but that always get the best out of me.</p>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col s12 l4">
+                <img src="https://www.artics.com.ar/wp-content/uploads/2018/01/big-data-maketing-online.jpg" alt="" class="responsive-img">
+          </div>
+          <div class="col s12 l6 offset-l1">
+            <h2 class="indigo-text text-darken-4">Databases</h2>
+            <p>Databases where my first love! Both SQL and NoSQL. I feel really confident working with SQL DBMS, MySQL my favorite. This is where I thrive, front-end and back-end development are awesome, but without databases isn't the same!</p>
+          </div>
+      </div>
+      <div class="row skillz">
+          <div class="col s12 l10 offset-l1">
+              <h1 class="indigo-text text-darken-4 center-align">Skills</h1>
+          </div>
+      </div>
+      <div class="row stack">
+          <div class="col s12 l10 offset-l1">
+              <h2 class="indigo-text text-lighten-3">Front-End</h2>
+          </div>
+      </div>
+      <div class="row lady">
+          <div class="col s12 l3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2000px-HTML5_logo_and_wordmark.svg.png" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">HTML5</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="http://tecnologiaenvivo.com/wp-content/uploads/2013/12/logo_CSS3-1.png" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">CSS3</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="http://pluspng.com/img-png/logo-javascript-png-javascript-tutorials-400.png" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">JavaScript</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="http://res.cloudinary.com/colinstodd-com/image/upload/v1512610733/n9qdpfw4kwsjqox0lymi.png" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">Materialize CSS</h5>
+          </div>
+      </div>
+      <div class="row lady">
+        <div class="col s12 l3">
+            <img src="https://www.troopsf.com/file/bootstrap-logo.png" class="responsive-img">
+            <h5 class="indigo-text lighten-1 center-align">Bootstrap</h5>
+        </div>
+        <div class="col s12 l3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Vue.js_Logo.svg/400px-Vue.js_Logo.svg.png" class="responsive-img">
+            <h5 class="indigo-text lighten-1 center-align">Vue.js</h5>
+        </div>
+        <div class="col s12 l3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" class="responsive-img">
+            <h5 class="indigo-text lighten-1 center-align">ReactJS</h5>
+        </div>
+        <div class="col s12 l3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/800px-Sass_Logo_Color.svg.png" class="responsive-img">
+            <h5 class="indigo-text lighten-1 center-align">SASS</h5>
+        </div>
+      </div>
+      <div class="row lady">
+          <div class="col s12 l3">
+              <img src="https://cdn-images-1.medium.com/max/353/1*lJY86WV3-67GbEcvvMTpwQ.png" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">Chart.js</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">React Native</h5>
+          </div>
+      </div>
+      <div class="row stack">
+          <div class="col s12 l10 offset-l1">
+              <h2 class="indigo-text text-lighten-1">Back-End</h2>
+          </div>
+      </div>
+      <div class="row lady">
+          <div class="col s12 l3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2000px-PHP-logo.svg.png" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">PHP</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="https://davidwalsh.name/demo/nodejs.png" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">Node.js</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="https://functionalhub.com/images/Logo_csharp.svg" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">C#</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="https://qph.fs.quoracdn.net/main-qimg-c43424186b9c089b9aa1d64c7f1989c1" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">Java</h5>
+          </div>
+      </div>
+      <div class="row lady">
+          <div class="col s12 l3">
+              <img src="https://uploads.toptal.io/blog/category/logo/25/express_js.png" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">Express</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="http://www.stickpng.com/assets/images/58480e35cef1014c0b5e4920.png" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">Laravel</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="http://www.logotypes101.com/logos/768/257CBC3E180789EEB3B468BEC3215483/MySQL.png" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">MySQL</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="http://www.stickpng.com/assets/images/584815fdcef1014c0b5e497a.png" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">PostgreSQL</h5>
+          </div>
+      </div>
+      <div class="row lady">
+          <div class="col s12 l3">
+              <img src="https://static1.squarespace.com/static/513914cde4b0f86e34bbb954/t/58d2c758725e25221a20ed53/1490208601230/mongodb-logo.png" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">MongoDB</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="http://assets.stickpng.com/thumbs/5847f40ecef1014c0b5e488a.png" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">Firebase</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="https://cdn.glitch.com/project-avatar/0d184ee3-fd8d-4b94-acf4-b4e686e57375.png  " alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">Passport.js</h5>
+          </div>
+      </div>
+      <div class="row stack">
+          <div class="col s12 l10 offset-l1">
+              <h2 class="indigo-text text-lighten-1">Tools</h2>
+          </div>
+      </div>
+      <div class="row lady">
+          <div class="col s12 l3">
+              <img src="https://git-scm.com/images/logos/logomark-orange@2x.png" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">Git</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">Github</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="https://desu-usergeneratedcontent.xyz/g/image/1519/30/1519300627843.png" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">npm</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Logo-composer-transparent.png" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">Composer</h5>
+          </div>
+      </div>
+      <div class="row lady">
+          <div class="col s12 l3">
+              <img src="https://cdn.iconscout.com/public/images/icon/free/png-512/google-analytics-google-analytics-brand-logo-3c6617fa47c4915a-512x512.png" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">Google Analytics</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="http://sergiescola.com/wp-content/uploads/2015/11/aws-logo-300x300.png" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">AWS</h5>
+          </div>
+          <div class="col s12 l3">
+              <img src="https://raw.githubusercontent.com/webpack/media/master/logo/icon-square-big.png" alt="" class="responsive-img">
+              <h5 class="indigo-text lighten-1 center-align">Webpack</h5>
+          </div>
+      </div>
+    
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+        <img src="https://images5.alphacoders.com/695/695931.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- services / tabs -->
+  <section class="section container scrollspy" id="services">
+      <div class="row">
+          <div class="col s12 l4">
+              <h2 class="indigo-text text-darken-4">Experience</h2>
+              <p>I've worked in freelance for small bussiness and clients. I have also participated in a couple of hackatons.</p>
+          </div>
+          <div class="col s12 l6 offset-l1">
+              <ul class="tabs">
+                  <li class="tab s6">
+                      <a href="#photography" class="indigo-text text-darken-4">Work Experience</a>
+                  </li>
+                  <li class="tab s6">
+                      <a href="#editing" class="indigo-text text-darken-4">Experience</a>
+                  </li>
+              </ul>
+              <div class="col s12" id="photography">
+                  <p class="flow-text indigo-text text-darken-4">WORK EXPERIENCE</p>
+                  <p>My first job was in 2016 when I developed a full-stack web application for a political party (PRD) in the city where I live.</p>
+                  <p>In freelance, I've design and developed various websites and web apps for small bussiness and clients. One of the most importants jobs was with a school, where I created a web app in which the students could send and check their homework. I also created a website for it.</p>
+              </div>
+              <div class="col s12" id="editing">
+                  <p class="flow-text indigo-text text-darken-4">EXPERIENCE</p>
+                  <p>I've created and developed so many web apps for my school projects, using most of the time PHP, MySQL and Vue/React as my stack. I've also participated in contests of technologic innovation aswell as in hackatons.</p>
+                  <p>The last couple of semesters I've been in my University computer center, mantaining, fixing bugs and querying data of the SII (Sistema Integral de Información), which is the University plattform for teachers, students and workers. I've work around PHP and MySQL.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+      <div class="parallax">
+          <img src="https://www.cs.ucd.ie/sites/default/files/mac_keyboard_lit_RESIZE_0.jpg" alt="" class="responsive-img">
+      </div>
+  </div>
+
+  <!-- contact form -->
+  <section class="section container scrollspy" id="contact">
+    <div class="row">
+        <div class="col s12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img src="./img/websockets.png" alt="Chat en tiempo real con websockets" class="materialboxed">
+                    <a href="#" class="pink btn-floating pulse halfway-fab"><i class="material-icons">favorite</i></a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Realtime chat.</span>
+                    <p>Chat created with websockets on the front and on the backend. This app use Vue.js in the front-end and Node.js and it's framework Express in the back-end.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Demo</a>
+                    <a href="#">Github</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="page-footer grey darken-3 scrollspy" id="about">
+      <div class="container">
+          <div class="row">
+              <div class="col s12 l6">
+                  <h5>About Me</h5>
+                  <p>I'm a mexican full-stack web developer who love from create a database to create a nice website. MySQL, PHP and Vue are my favorite stack, but lately React, Node and Mongo are winning a place in my heart :)</p>
+                  <p>I'm really interested in web techonlogies, and also I like to follow and practice different sports like Brazilian Jiu Jitsu, Basketball and Tennis.</p>
+              </div>
+              <div class="col s12 l4 offset-l2">
+                  <h5>Connect</h5>
+                  <ul>
+                      <li><a href="#" class="grey-text text-lighten-3">LinkedIn</a></li>
+                      <li><a href="#" class="grey-text text-lighten-3">Github</a></li>
+                      <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+          <div class="container center-align">
+              &copy; 2018 Manny Tareas
+          </div>
+      </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $("#mobile-menu").sidenav();
+        $(".materialboxed").materialbox();
+        $(".parallax").parallax();
+        $(".tabs").tabs();
+        $(".datepicker").datepicker({
+            disableWeekends:true
+        });
+        $(".tooltipped").tooltip();
+        $(".scrollspy").scrollSpy();
+    });
+  </script>
+</body>
+</html>
